@@ -1,0 +1,41 @@
+@import "abstract/breakpoint";
+@import "layout/l-header";
+@import "layout/l-main";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background-color: gray;
+    height: 100vh;
+    font-family: Inter;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.content {
+    background-color: green;
+    width: 80%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    @include breakpoint(1225) {
+        width: 65%;
+    }
+    @include breakpoint(830) {
+        width: 54%;
+    }
+    @include breakpoint(630) {
+        width: 80%;
+    }
+}
