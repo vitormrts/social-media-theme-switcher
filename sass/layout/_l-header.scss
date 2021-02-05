@@ -4,7 +4,8 @@
     display: flex;
     background-color: blue;
     align-items: center;
-    max-height: 100px;
+    min-height: 100px;
+    max-height: 300px;
 
     @include breakpoint(830) {
         display: block;
