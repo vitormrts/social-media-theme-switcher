@@ -70,6 +70,12 @@
             height: 210px;
             box-shadow: 0px 2px 5px var(--color-l-shadow);
 
+            &:hover {
+                filter: brightness(0.9);
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
             @include breakpoint(1225) {
                 height: 240px;
             }
@@ -138,6 +144,12 @@
             display: flex;
             box-shadow: 0px 2px 5px var(--color-l-shadow);
             flex-direction: column;
+
+            &:hover {
+                filter: brightness(0.9);
+                transition: 0.3s;
+                cursor: pointer;
+            }
 
             &__info {
                 display: flex;

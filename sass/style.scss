@@ -37,11 +37,16 @@ html {
     display: grid;
     align-items: center;
     height: 100%;
+    margin: 100px;
     justify-items: center;
     background-color: var(--color-l-top);
 
     @include breakpoint(820) {
         font-size: 59%;
+    }
+
+    @include breakpoint(630) {
+        padding: 0px;
     }
 }
 
@@ -55,7 +60,7 @@ body {
         width: 90%;
     }
     @include breakpoint(630) {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -64,6 +69,7 @@ body {
     background-color: var(--color-l-bg);
     display: grid;
     padding: 100px;
+    margin-bottom: 100px;
     font-family: Inter;
     font-size: 1.4rem;
     border-radius: 20px;
@@ -73,10 +79,8 @@ body {
         padding: 90px;
     }
     @include breakpoint(630) {
-        padding: 50px;
-    }
-    @include breakpoint(630) {
-        padding: 30px;
+        padding: 20px;
+        width: 100%;
     }
 
 }
