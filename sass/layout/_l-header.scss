@@ -2,10 +2,16 @@
     position: relative;
     flex: 1;
     display: flex;
-    background-color: blue;
+    background-color: var(--color-l-top);
     align-items: center;
-    min-height: 100px;
-    max-height: 300px;
+    max-height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    h1 {
+        color: var(--color-l-text-primary);
+        font-size: 3.8rem;
+    }
 
     @include breakpoint(830) {
         display: block;

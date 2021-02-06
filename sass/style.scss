@@ -1,6 +1,29 @@
+$light-colors: (
+    "l-card": hsl(227, 47%, 96%),
+    "l-bg": hsl(0, 0%, 100%),
+    "l-top": hsl(225, 100%, 98%),
+    "l-text-secondary": hsl(228, 12%, 44%),
+    "l-text-primary": hsl(230, 17%, 14%)
+);
+
+$updown-colors: (
+    "green": hsl(163, 72%, 41%),
+    "red": hsl(356, 69%, 56%)
+);
+
 @import "abstract/breakpoint";
 @import "layout/l-header";
 @import "layout/l-main";
+
+:root {
+    @each $name, $color in $light-colors {
+        --color-#{$name}: #{$color};
+    }
+
+    @each $name, $color in $updown-colors {
+        --color-#{$name}: #{$color};
+    }
+}
 
 * {
     padding: 0;
@@ -13,15 +36,25 @@ html {
 }
 
 .container {
-    background-color: gray;
+    position: relative;
+    background-color: var(--color-l-bg);
     height: 100vh;
     font-family: Inter;
     display: flex;
     font-size: 1.4rem;
+
+    &::before {
+        content: '';
+        height: 240px;
+        background-color: var(--color-l-top);
+        width: 100%;
+        position: absolute;
+        border-radius: 0 16px;
+    }
 }
 
 .content {
-    background-color: green;
+    // background-color: green;
     width: 80%;
     display: flex;
     height: auto;

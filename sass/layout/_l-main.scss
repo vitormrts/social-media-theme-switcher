@@ -4,12 +4,29 @@
     display: flex;
     flex-direction: column;
 
+    &__today--up {
+        color: var(--color-green);
+    }
+
+    &__today--down {
+        color: var(--color-red)
+    }
+
+    h2 {
+        color: var(--color-l-text-primary);
+    }
+
     &__c-followers {
-        background-color: red;
+        // background-color: red;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, auto));
         column-gap: 30px;
         row-gap: 30px;
+
+
+        h2 {
+            font-size: 6.5rem;
+        }
 
         @include breakpoint(1225) {
             grid-template-columns: repeat(2, 1fr);
@@ -22,7 +39,8 @@
         }
 
         &__card {
-            background-color: yellow;
+            border-radius: 8px;
+            background-color: var(--color-l-card);
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -41,6 +59,10 @@
             @include breakpoint(630) {
                 height: 380px;
             }
+
+            label {
+
+            }
         }
     }
 
@@ -51,6 +73,16 @@
         column-gap: 30px;
         row-gap: 30px;
 
+        @include breakpoint(1225) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        @include breakpoint(720) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
         &__status {
             text-align: end;
             align-self: center;
@@ -59,7 +91,8 @@
         &__card {
             padding: 15px;
             height: 130px;
-            background-color: pink;
+            border-radius: 8px;
+            background-color: var(--color-l-card);
             display: flex;
             flex-direction: column;
 
@@ -87,5 +120,12 @@
                 flex: 1;
             }
         }
+    }
+
+    #overview-today {
+        color: var(--color-l-text-secondary);
+        margin-top: 50px;
+        margin-bottom: 24px;
+        font-size: 2.8rem;
     }
 }
