@@ -6,10 +6,12 @@
 
     &__today--up {
         color: var(--color-green);
+        font-weight: 700;
     }
 
     &__today--down {
-        color: var(--color-red)
+        color: var(--color-red);
+        font-weight: 700;
     }
 
     h2 {
@@ -19,13 +21,32 @@
     &__c-followers {
         // background-color: red;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+        grid-template-columns: repeat(auto-fill, minmax(20%, auto));
         column-gap: 30px;
         row-gap: 30px;
 
+        &__user {
+            font-weight: 700;
+            color: var(--color-l-text-secondary);
+            margin-left: 7px;
+            font-size: 1.3rem;
+        }
+
+        &__followers {
+            color: var(--color-l-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 17px;
+        }
+
+        &__icon {
+            display: flex;
+        }
+
 
         h2 {
-            font-size: 6.5rem;
+            font-size: 5.5rem;
+            margin-top: 17px;
         }
 
         @include breakpoint(1225) {
@@ -39,7 +60,7 @@
         }
 
         &__card {
-            border-radius: 8px;
+            border-radius: 5px;
             background-color: var(--color-l-card);
             display: flex;
             align-items: center;
@@ -60,8 +81,30 @@
                 height: 380px;
             }
 
-            label {
+            &.facebook {
+                border-top: 5px solid hsl(208, 92%, 53%);
+            }
 
+            &.twitter {
+                border-top: 5px solid hsl(203, 89%, 53%);
+            }
+
+            &.instagram {
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+                    height: 5px;
+                    top: 0;
+                    border-radius: 5px 5px 0px 0px;
+
+                }
+            }
+
+            &.youtube {
+                border-top: 5px solid hsl(348, 97%, 39%)
             }
         }
     }
@@ -105,10 +148,16 @@
                     width: 20px;
                     height: 20px;
                 }
+
+                span {
+                    color: var(--color-l-text-secondary);
+                    font-weight: 700;
+                }
             }
 
             h2 {
                 align-self: center;
+                font-size: 2.8rem;
             }
 
             div {

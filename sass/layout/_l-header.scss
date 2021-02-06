@@ -2,15 +2,19 @@
     position: relative;
     flex: 1;
     display: flex;
-    background-color: var(--color-l-top);
     align-items: center;
-    max-height: 100px;
+    max-height: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
 
     h1 {
         color: var(--color-l-text-primary);
         font-size: 3.8rem;
+    }
+
+    span {
+        color: var(--color-l-text-secondary);
+        font-weight: 700;
     }
 
     @include breakpoint(830) {
