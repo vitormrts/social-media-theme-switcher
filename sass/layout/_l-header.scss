@@ -15,17 +15,82 @@
         font-weight: 700;
     }
 
-    @include breakpoint(830) {
-        display: block;
-    }
+    // @include breakpoint(830) {
+    //     display: block;
+    // }
 
-    &__switch-container {
+    &__dark-button {
         flex: 1;
-        text-align: end;
+        display: flex;
+        justify-content: end;
+        align-items: center;
         @include breakpoint(830) {
             display: flex;
             justify-content: space-between;
         }
+        span {
+            margin-right: 12px;
+        }
     }
+
+    &.switch {
+        position: absolute;
+        margin-left: -9999px;
+        visibility: hidden;
+
+        &.switch--shadow + label {
+            padding: 2px;
+            width: 50px;
+            height: 25px;
+            background-color: #dddddd;
+            border-radius: 60px;
+
+            &::before, &::after {
+                display: block;
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                bottom: 1px;
+                content: '';
+            }
+
+            &::before {
+                right: 1px;
+                display: flex;
+                background-color: hsl(230, 22%, 74%);
+                border-radius: 60px;
+                transition: all 0.4s;
+            }
+
+            &::after {
+                margin-top: 2px;
+                margin-left: 3px;
+                height: 18px;
+                width: 18px;
+                background-color: #fff;
+                border-radius: 100%;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                transition: all 0.4s;
+            }
+          }
+      }
+      
+    &.switch + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+
+    &.switch--shadow:checked + label::before {
+        background-image: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    }
+    &.switch--shadow:checked + label::after {
+        transform: translateX(23px);
+        background-color: var(--color-l-text-primary);
+    }
+
+    
 
 }
