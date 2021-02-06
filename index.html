@@ -15,204 +15,202 @@
 </head>
 <body>
   <div class="container">
-    <div class="content">
-      <header class="l-header">
-        <div class="l-header__geral">
-          <h1 class="l-header__title">Social Media Dashboard</h2>
-          <span>Total Followers: 23,004</span>
+    <header class="l-header">
+      <div class="l-header__geral">
+        <h1 class="l-header__title">Social Media Dashboard</h2>
+        <span>Total Followers: 23,004</span>
+      </div>
+      <div class="l-header__switch-container">
+        <span id="dark-mode">Dark Mode</span>
+        <input type="checkbox" class="l-header__switch-button">
+      </div>
+    </header>
+
+    <main class="l-main">
+      <section class="l-main__c-followers">
+        <div class="l-main__c-followers__card facebook">
+          <label class="l-main__c-followers__icon">
+            <img src="assets/icon-facebook.svg" alt="icon facebook">
+            <span class="l-main__c-followers__user">@vitormrts</span>
+          </label>
+
+          <h2>1987</h2>
+          <span class="l-main__c-followers__followers">Followers</span>
+
+          <label>
+            <img src="assets/icon-up.svg" alt="up simbol">
+            <span class="l-main__today--up">12 Today</span>
+          </label>
         </div>
-        <div class="l-header__switch-container">
-          <span id="dark-mode">Dark Mode</span>
-          <input type="checkbox" class="l-header__switch-button">
+
+        <div class="l-main__c-followers__card twitter" >
+          <label class="l-main__c-followers__icon">
+            <img src="assets/icon-twitter.svg" alt="twitter icon">
+            <span class="l-main__c-followers__user">@vitormrts</span>
+          </label>
+
+          <h2>1044</h2>
+          <span class="l-main__c-followers__followers">Followers</span>
+
+          <label>
+            <img src="assets/icon-up.svg" alt="up icon">
+            <span class="l-main__today--up">99 Today</span>
+          </label>
         </div>
-      </header>
-  
-      <main class="l-main">
-        <section class="l-main__c-followers">
-          <div class="l-main__c-followers__card facebook">
-            <label class="l-main__c-followers__icon">
-              <img src="assets/icon-facebook.svg" alt="icon facebook">
-              <span class="l-main__c-followers__user">@vitormrts</span>
-            </label>
-  
-            <h2>1987</h2>
-            <span class="l-main__c-followers__followers">Followers</span>
-  
-            <label>
-              <img src="assets/icon-up.svg" alt="up simbol">
-              <span class="l-main__today--up">12 Today</span>
-            </label>
-          </div>
-  
-          <div class="l-main__c-followers__card twitter" >
-            <label class="l-main__c-followers__icon">
-              <img src="assets/icon-twitter.svg" alt="twitter icon">
-              <span class="l-main__c-followers__user">@vitormrts</span>
-            </label>
-  
-            <h2>1044</h2>
-            <span class="l-main__c-followers__followers">Followers</span>
-  
-            <label>
+
+        <div class="l-main__c-followers__card instagram">
+          <label class="l-main__c-followers__icon">
+            <img src="assets/icon-instagram.svg" alt="instagram icon">
+            <span class="l-main__c-followers__user">@vitormrts</span>
+          </label>
+
+          <h2>11k</h2>
+          <span class="l-main__c-followers__followers">Followers</span>
+
+          <label>
+            <img src="assets/icon-up.svg" alt="up icon">
+            <span class="l-main__today--up">1099 Today</span>
+          </label>
+        </div>
+
+        <div class="l-main__c-followers__card youtube">
+          <label class="l-main__c-followers__icon">
+            <img src="assets/icon-youtube.svg" alt="youtube icon">
+            <span class="l-main__c-followers__user">Vitor M.</span>
+          </label>
+
+          <h2>8239</h2>
+          <span class="l-main__c-followers__followers">Subscribers</span>
+
+          <label>
+            <img src="assets/icon-down.svg" alt="down icon">
+            <span class="l-main__today--down">144 Today</span>
+          </label>
+        </div>
+      </section>
+      <h2 id="overview-today">Overview - Today</h2>
+      <section class="l-main__c-overview">
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Page Views</span>
+            <img src="assets/icon-facebook.svg" alt="">
+          </label>
+
+          <div>
+            <h2>87</h2>
+            <label class="l-main__c-overview__status">
               <img src="assets/icon-up.svg" alt="up icon">
-              <span class="l-main__today--up">99 Today</span>
+              <span class="l-main__today--up">3%</span>
             </label>
           </div>
-  
-          <div class="l-main__c-followers__card instagram">
-            <label class="l-main__c-followers__icon">
-              <img src="assets/icon-instagram.svg" alt="instagram icon">
-              <span class="l-main__c-followers__user">@vitormrts</span>
-            </label>
-  
-            <h2>11k</h2>
-            <span class="l-main__c-followers__followers">Followers</span>
-  
-            <label>
-              <img src="assets/icon-up.svg" alt="up icon">
-              <span class="l-main__today--up">1099 Today</span>
-            </label>
-          </div>
-  
-          <div class="l-main__c-followers__card youtube">
-            <label class="l-main__c-followers__icon">
-              <img src="assets/icon-youtube.svg" alt="youtube icon">
-              <span class="l-main__c-followers__user">Vitor M.</span>
-            </label>
-  
-            <h2>8239</h2>
-            <span class="l-main__c-followers__followers">Subscribers</span>
-  
-            <label>
+        </div>
+
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Likes</span>
+            <img src="assets/icon-facebook.svg" alt="">
+          </label>
+
+          <div>
+            <h2>52</h2>
+            <label class="l-main__c-overview__status">
               <img src="assets/icon-down.svg" alt="down icon">
-              <span class="l-main__today--down">144 Today</span>
+              <span class="l-main__today--down">2%</span>
             </label>
           </div>
-        </section>
-        <h2 id="overview-today">Overview - Today</h2>
-        <section class="l-main__c-overview">
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Page Views</span>
-              <img src="assets/icon-facebook.svg" alt="">
+        </div>
+
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Likes</span>
+            <img src="assets/icon-instagram.svg" alt="">
+          </label>
+
+          <div>
+            <h2>5462</h2>
+            <label class="l-main__c-overview__status">
+              <img src="assets/icon-up.svg" alt="">
+              <span class="l-main__today--up">2257%</span>
             </label>
-  
-            <div>
-              <h2>87</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-up.svg" alt="up icon">
-                <span class="l-main__today--up">3%</span>
-              </label>
-            </div>
           </div>
-  
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Likes</span>
-              <img src="assets/icon-facebook.svg" alt="">
+        </div>
+
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Profile Views</span>
+            <img src="assets/icon-instagram.svg" alt="">
+          </label>
+
+          <div>
+            <h2>52k</h2>
+            <label class="l-main__c-overview__status">
+              <img src="assets/icon-up.svg" alt="up icon">
+              <span class="l-main__today--up">1375%</span>
             </label>
-  
-            <div>
-              <h2>52</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-down.svg" alt="down icon">
-                <span class="l-main__today--down">2%</span>
-              </label>
-            </div>
           </div>
+        </div>
   
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Likes</span>
-              <img src="assets/icon-instagram.svg" alt="">
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Retweets</span>
+            <img src="assets/icon-twitter.svg" alt="">
+          </label>
+
+          <div>
+            <h2>117</h2>
+            <label class="l-main__c-overview__status">
+              <img src="assets/icon-up.svg" alt="up icon">
+              <span class="l-main__today--up">303%</span>
             </label>
-  
-            <div>
-              <h2>5462</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-up.svg" alt="">
-                <span class="l-main__today--up">2257%</span>
-              </label>
-            </div>
           </div>
-  
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Profile Views</span>
-              <img src="assets/icon-instagram.svg" alt="">
+        </div>
+
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Likes</span>
+            <img src="assets/icon-twitter.svg" alt="">
+          </label>
+
+          <div>
+            <h2>507</h2>
+            <label class="l-main__c-overview__status">
+              <img src="assets/icon-up.svg" alt="up icon">
+              <span class="l-main__today--up">553%</span>
             </label>
-  
-            <div>
-              <h2>52k</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-up.svg" alt="up icon">
-                <span class="l-main__today--up">1375%</span>
-              </label>
-            </div>
           </div>
-   
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Retweets</span>
-              <img src="assets/icon-twitter.svg" alt="">
+        </div>
+
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Likes</span>
+            <img src="assets/icon-youtube.svg" alt="">
+          </label>
+
+          <div>
+            <h2>107</h2>
+            <label class="l-main__c-overview__status">
+              <img src="assets/icon-down.svg" alt="down icon">
+              <span class="l-main__today--down">19%</span>
             </label>
-  
-            <div>
-              <h2>117</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-up.svg" alt="up icon">
-                <span class="l-main__today--up">303%</span>
-              </label>
-            </div>
           </div>
-  
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Likes</span>
-              <img src="assets/icon-twitter.svg" alt="">
+        </div>
+
+        <div class="l-main__c-overview__card">
+          <label class="l-main__c-overview__card__info">
+            <span>Total Views</span>
+            <img src="assets/icon-youtube.svg" alt="">
+          </label>
+
+          <div>
+            <h2>1407</h2>
+            <label class="l-main__c-overview__status">
+              <img src="assets/icon-down.svg" alt="down icon">
+              <span class="l-main__today--down">12%</span>
             </label>
-  
-            <div>
-              <h2>507</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-up.svg" alt="up icon">
-                <span class="l-main__today--up">553%</span>
-              </label>
-            </div>
           </div>
-  
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Likes</span>
-              <img src="assets/icon-youtube.svg" alt="">
-            </label>
-  
-            <div>
-              <h2>107</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-down.svg" alt="down icon">
-                <span class="l-main__today--down">19%</span>
-              </label>
-            </div>
-          </div>
-  
-          <div class="l-main__c-overview__card">
-            <label class="l-main__c-overview__card__info">
-              <span>Total Views</span>
-              <img src="assets/icon-youtube.svg" alt="">
-            </label>
-  
-            <div>
-              <h2>1407</h2>
-              <label class="l-main__c-overview__status">
-                <img src="assets/icon-down.svg" alt="down icon">
-                <span class="l-main__today--down">12%</span>
-              </label>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>
