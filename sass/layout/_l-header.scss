@@ -8,6 +8,12 @@
     h1 {
         color: var(--color-l-text-primary);
         font-size: 3.8rem;
+        margin-bottom: 12px;
+
+        @include breakpoint(820) {
+            font-size: 3.2rem;
+            text-align: center;
+        }
     }
 
     span {
@@ -15,16 +21,17 @@
         font-weight: 700;
     }
 
-    // @include breakpoint(830) {
-    //     display: block;
-    // }
+    @include breakpoint(1030) {
+         display: block;
+    }
 
     &__dark-button {
         flex: 1;
         display: flex;
         justify-content: end;
         align-items: center;
-        @include breakpoint(830) {
+        @include breakpoint(1030) {
+            margin-top: 25px;
             display: flex;
             justify-content: space-between;
         }
@@ -41,8 +48,8 @@
         &.switch--shadow + label {
             padding: 2px;
             width: 50px;
+            rotate: 180deg;
             height: 25px;
-            background-color: #dddddd;
             border-radius: 60px;
 
             &::before, &::after {
@@ -64,7 +71,7 @@
 
             &::after {
                 margin-top: 2px;
-                margin-left: 3px;
+                margin-left: 4px;
                 height: 18px;
                 width: 18px;
                 background-color: #fff;
@@ -84,13 +91,10 @@
     }
 
     &.switch--shadow:checked + label::before {
-        background-image: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     }
     &.switch--shadow:checked + label::after {
         transform: translateX(23px);
-        background-color: var(--color-l-text-primary);
+        background-color: hsl(230, 17%, 14%);
     }
-
-    
-
 }

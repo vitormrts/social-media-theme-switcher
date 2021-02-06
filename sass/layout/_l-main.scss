@@ -78,9 +78,7 @@
                 height: 260px;
             }
 
-            @include breakpoint(630) {
-                height: 380px;
-            }
+
 
             &.facebook {
                 border-top: 5px solid hsl(208, 92%, 53%);
