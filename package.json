@@ -1,0 +1,22 @@
+{
+  "name": "social-media-theme-switcher",
+  "version": "1.0.0",
+  "description": "A social media dashboard with theme switcher.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitormrts/social-media-theme-switcher.git"
+  },
+  "author": "@vitormrts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitormrts/social-media-theme-switcher/issues"
+  },
+  "homepage": "https://github.com/vitormrts/social-media-theme-switcher#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
